@@ -1,34 +1,17 @@
-const calc = require('./calc');
-const readline  = require('readline');
+const http = require('http')
+const port = 3000
 
-// const numbersToAdd = [
-//   3,
-//   4,
-//   10,
-//   2
-// ]
-//
-// const result = calc.sum(numbersToAdd)
-// console.log(`The result is: ${result}`)
+const requestHandler = (request, response) => {
+  console.log(request.url)
+  response.end('Hello Node.js Server!')
+}
 
+const server = http.createServer(requestHandler)
 
-const usernumbers = readline.createInterface({
-   input: process.stdin
-//   output: process.stdout
- });
+server.listen(port, (err) => {
+  if (err) {
+    return console.log('something bad happened', err)
+  }
 
-const userresult = calc.sum(usernumbers)
-console.log(`The result is: ${userresult}`)
-
-userresult.question('Please enter a number ', (usernumber) => {
- userresult.close();
- });
-
-// const rl = readline.createInterface({
-//   input: process.stdin,
-//   output: process.stdout
-// });
-//
-// userresult.question('Please enter a number ', (usernumber) => {
-// userresult.close();
-// });
+  console.log(`server is listening on ${port}`)
+})
