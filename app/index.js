@@ -1,4 +1,5 @@
 const calc = require('./calc')
+const readline  = require('./readline')
 
 const numbersToAdd = [
   3,
