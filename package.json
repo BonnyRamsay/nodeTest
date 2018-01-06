@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/BonnyRamsay/nodeTest/issues"
   },
-  "homepage": "https://github.com/BonnyRamsay/nodeTest#readme"
+  "homepage": "https://github.com/BonnyRamsay/nodeTest#readme",
+  "dependencies": {
+    "lodash": "^4.17.4"
+  }
 }
