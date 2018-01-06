@@ -5,9 +5,11 @@ const rl = readline.createInterface({
   output: process.stdout
 });
 
-rl.question('What do you think of Node.js? ', (answer) => {
+rl.question('give me a number? ', (answer) => {
+
+  var number : ${answer};
   // TODO: Log the answer in a database
-  console.log(`Thank you for your valuable feedback: ${answer}`);
+//  console.log(`Thank you for your number: ${answer}`);
 
   rl.close();
 });

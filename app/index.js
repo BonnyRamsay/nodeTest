@@ -2,7 +2,7 @@ const calc = require('./calc')
 const readline  = require('./readline')
 
 const numbersToAdd = [
-  3,
+  readline.number,
   4,
   10,
   2
