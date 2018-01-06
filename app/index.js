@@ -15,7 +15,7 @@ app.get('/', (request, response) => {
 app.listen(port, (err) => {
   if (err) {
     return console.log('something bad happened', err)
-  }
+  })
 
 
 app.engine('.hbs', exphbs({
