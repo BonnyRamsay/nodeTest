@@ -13,19 +13,20 @@ const calc = require('./calc')
 
 
 const usernumbers = [
-   3,
-   4,
+   1,
+   2,
+   3
  ]
 
 const userresult = calc.sum(usernumbers)
 console.log(`The result is: ${userresult}`)
 
 
-const rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout
-});
-
-userresult.question('Please enter a number ', (usernumber) => {
-userresult.close();
-});
+// const rl = readline.createInterface({
+//   input: process.stdin,
+//   output: process.stdout
+// });
+//
+// userresult.question('Please enter a number ', (usernumber) => {
+// userresult.close();
+// });
